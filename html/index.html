@@ -14,14 +14,26 @@
       rel="stylesheet"
     />
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/index-styles.css" />
     <title>Pizzería Tomato</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary page-navbar">
+    <header class="page-header">
+      <nav class="navbar navbar-expand-lg page-navbar">
         <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <figure>
+              <img
+                class="header__logo"
+                src="../media/images/pizza-navbar-brand.png"
+                alt="logo pizza"
+              />
+            </figure>
+          </a>
           <a class="navbar-brand" href="#">Pizzeria Tomato</a>
           <button
             class="navbar-toggler"
@@ -45,6 +57,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Delivery</a>
+              </li>
               <li class="nav-item get-started">
                 <a class="nav-link" href="#">Get Started</a>
               </li>
@@ -54,7 +69,28 @@
       </nav>
     </header>
 
-    <main></main>
+    <main class="main-content container-fluid">
+      <section class="main-presentation container-fluid">
+        <article class="main-presentation__article">
+          <div class="article__item">
+            <h1 class="article__item__title">
+              We deliver the best food <h1 class="article__item__title article__item__title2">at the best price</h1>
+            </h1>
+            <p class="article__item__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+              Illum, sint. Fugit fuga corporis aliquid molestias iusto odio rem alias
+
+             <button class="article__item__button" type="button">Visit Our Menu</button> 
+          </div>
+
+          <figure class="article__item">
+            <img
+              src="../media/images/pizza-main-content.png"
+              alt="Pizza Image"
+            />
+          </figure>
+        </article>
+      </section>
+    </main>
 
     <footer></footer>
   </body>

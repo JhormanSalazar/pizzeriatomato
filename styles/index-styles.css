@@ -1,47 +1,122 @@
 * {
- box-sizing: border-box;
- margin: 0;
- padding: 0;
- list-style: none;
- text-decoration: none;   
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
-mg {
-    width: 100%;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f5f7f8;
+  font-family: "Poppings", sans-serif;
+}
+
+img {
+  width: 100%;
 }
 
 .page-navbar {
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    width: 100%;
-    padding-right: 50%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-right: 50%;
+  font-size: 1.6rem;
+  background-color: #f5f7f8;
 }
 
 .navbar-brand {
-    position: relative;
-    left: 30%;
+  position: relative;
+  left: 40%;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.header__logo {
+  width: 5rem;
 }
 
 .container {
-    max-width: 1200px; 
-    width: 100%;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .navbar-nav {
-    position: relative;
-    left: 70%
+  position: relative;
+  left: 70%;
 }
 
 .navbar-nav .nav-item {
-    margin: 0 15px;
+  margin: 15px;
 }
 
 .navbar-nav .get-started {
-    border: 1px solid grey;
-    background-color: rgb(252, 222, 112, 0.3);
-    border-radius: 25px;
-    padding: 0 10px;
-    position: relative;
-    right: -40%;
-    color: aliceblue;
+  border: 1px solid grey;
+  background-color: rgba(252, 222, 112, 0.8);
+  border-radius: 25px;
+  padding: 0 10px;
+  margin-left: 4rem;
+  color: aliceblue;
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+.main-content {
+  margin-top: 10%;
+}
+
+.main-presentation {
+  width: 60%;
+  align-items: center;
+  display: flex;
+  padding: 2rem;
+  border: 0.5px solid rgb(252, 222, 112, 0.8);
+  box-shadow: 2px 4px 10px 2px rgb(252, 222, 112, 0.8);
+  border-radius: 25px;
+}
+
+.main-presentation .main-presentation__article {
+  gap: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-presentation .main-presentation__article .article__item {
+    text-align: center;
+}
+
+.main-presentation
+  .main-presentation__article
+  .article__item
+  .article__item__title {
+  font-size: 3rem;
+  margin-top: 1.5rem;
+}
+
+.main-presentation
+  .main-presentation__article
+  .article__item
+  .article__item__title2 {
+  color: #fcde70cc;
+}
+
+.main-presentation .main-presentation__article .article__item img {
+  width: 25rem;
+}
+
+.article__item__p {
+font-size: 1.3rem;
+margin-top: 3rem;
+}
+
+.article__item__button {
+    margin-top: 3rem;
+    width: 14rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.5rem;
+    text-wrap: nowrap;
+    background-color: #fcde70cc;
 }

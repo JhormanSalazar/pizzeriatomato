@@ -13,6 +13,7 @@ html {
 body {
   background-color: #f5f7f8;
   font-family: "Poppings", sans-serif;
+  text-transform: uppercase;
 }
 
 img {
@@ -20,12 +21,18 @@ img {
 }
 
 .page-navbar {
+  position: fixed;
   display: flex;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   align-items: center;
   width: 100%;
   padding-right: 50%;
-  font-size: 1.6rem;
-  background-color: #f5f7f8;
+  font-size: 1.4rem;
+  background-color: #FCDE70;
+  box-shadow: 0.01rem 0.5rem 1rem 1px rgb(252, 222, 112, 0.8);
+
 }
 
 .navbar-brand {
@@ -46,36 +53,43 @@ img {
 
 .navbar-nav {
   position: relative;
-  left: 70%;
+  left: 65%;
 }
 
 .navbar-nav .nav-item {
-  margin: 15px;
+  margin: 0.5rem;
 }
 
 .navbar-nav .get-started {
-  border: 1px solid grey;
-  background-color: rgba(252, 222, 112, 0.8);
+  border: 1px solid #F5F7F8;
+  background-color: #E8B86D;
   border-radius: 25px;
   padding: 0 10px;
   margin-left: 4rem;
-  color: aliceblue;
   text-align: center;
   text-wrap: nowrap;
 }
 
+.navbar-nav .get-started  a{
+  color: #F5F7F8;
+}
+
+
 .main-content {
-  margin-top: 10%;
+  margin-top: 13%;
+  max-width: 140rem;
+  min-width: 100rem;
 }
 
 .main-presentation {
-  width: 60%;
+  width: 65%;
   align-items: center;
   display: flex;
   padding: 2rem;
   border: 0.5px solid rgb(252, 222, 112, 0.8);
   box-shadow: 2px 4px 10px 2px rgb(252, 222, 112, 0.8);
   border-radius: 25px;
+  position: relative;
 }
 
 .main-presentation .main-presentation__article {
@@ -110,6 +124,7 @@ img {
 .article__item__p {
 font-size: 1.3rem;
 margin-top: 3rem;
+text-transform: none;
 }
 
 .article__item__button {
@@ -120,3 +135,21 @@ margin-top: 3rem;
     text-wrap: nowrap;
     background-color: #fcde70cc;
 }
+
+.hot-desserts {
+  display: block;
+  width: 70rem;
+  margin: 15rem auto 0;
+}
+
+.hot-desserts span {
+  font-size: 1.8rem;
+}
+
+.hot-desserts-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 70rem;
+  margin: 1rem auto 0;
+}
+
